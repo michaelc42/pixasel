@@ -1,0 +1,117 @@
+.clickbox {
+	width: 130px;
+	height: 70px;
+	top: 0;
+	left: 0;
+	background: black;
+	position: absolute;
+	border-radius:15px;
+	color: white;
+}
+.clickbox p{
+	margin: 4px;
+}
+
+/* For pixasel app */
+#pixasel {
+	position: relative;
+}
+#pixasel ul{ 
+	margin: 0;
+	padding: 0;
+}
+#pixasel ul li{
+	list-style-type:none;
+	position: absolute;
+}
+
+#pixasel ul li img{
+	visibility: hidden;
+}
+
+
+#pixasel #overlay {
+	position:absolute;
+	background: black;
+	visibility: hidden;
+	opacity: .8;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+#pixasel #next, #pixasel #prev{
+	position: absolute;
+	/*
+	height: 200px;
+	width: 40px;
+	*/
+	background: gray;
+	opacity: .6;
+}
+
+#pixasel #next:hover, #pixasel #prev:hover{
+	opacity: .7;
+}
+
+#pixasel #buttons {
+	visibility: hidden;
+}
+#pixasel #next {
+	/*right: -480px;*/
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+}
+#pixasel #prev{
+	/*left: 0px;*/
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+}
+
+/* add specific params to script */
+#pixasel #overlay p {
+	color: white;
+	position: absolute;
+	height: inherit;
+	width: inherit;
+	margin: 15px;
+	
+	font-size: 15px;
+	/*
+	left: 100px;
+	right: 100px;
+	top: 10px;
+	bottom: 10px;
+	width: 300px; */
+}
+#pixasel #overlay:hover{
+	opacity: .9;
+}
+
+/* Arrows */
+.right_arrow, .left_arrow {
+	position: absolute;
+	top: 40%;
+	opacity: .9;
+}
+
+.right_arrow{
+	/*
+    border-top : 20px solid transparent;
+    border-bottom : 20px solid transparent;
+    border-left : 20px solid black; */
+    width:0;
+    height:0;
+}
+
+.left_arrow { 
+
+    width:0;
+    height:0;
+}
+
+.right_arrow_hovered{
+	left: 12px;
+}
+.left_arrow_hovered{
+	right: 12px;
+}
